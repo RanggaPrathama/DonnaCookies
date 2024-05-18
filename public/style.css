@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    /* width: 100vw; */
+    height: 15vw;
+    background-image: url('images/navBackground.svg');
+    background-size: 100%;
+    background-position: center;
+    padding: 1vw;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+nav .image{
+    position: absolute;
+    width:18%;
+    float: left;
+    top: 0;
+    margin-left: 12vw;
+}
+nav .nav-icon{
+    float: right;
+}
+header{
+    padding: 2vw 4vw;
+    border-bottom: 1px solid black;
+}
+
+header .row1{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+header .text-box{
+    width: 897px;
+    height: 164px;
+    background-color: #97672cc3;
+    padding: 2vw;
+    color: white;
+    border-radius: 15px;
+}
+header .box-image{
+    width: 245px;
+    height: 230px;
+}
+header .row2 .btn-header{
+    width: 187px;
+    height: 41px;
+    border-radius: 15px;
+    background-color: #97672cc3;
+    color: white;
+    font-weight: 500;
+}
+header .row2 .btn-header:hover{
+    width: 187px;
+    height: 41px;
+    border-radius: 15px;
+    background-color: #97672c;
+    color: white;
+    font-weight: 500;
+}
+.best-seller b{
+    font-weight: 400;
+    margin: 1vw;
+    font-size: 50px;
+    color: #97662C;
+}
+.best-seller .box-content{
+    gap: 4vw;
+    justify-content: center;
+    padding: 2vw;
+}
+.best-seller .btn-best-seller{
+    width: 187px;
+    height: 41px;
+    border-radius: 15px;
+    background-color: #97672cc3;
+    color: white;
+    font-weight: 500;
+}
+.best-seller .content{
+    gap: 1vw;
+}
+.best-seller .content .content-image{
+    width: 14vw;
+    height: 14vw;
+    border-radius: 15px;
+    background-color: #97672cc3;
+    color: white;
+    font-weight: 500;
+    background-position: center;
+    background-size: cover;
+}
+.galery{
+    width: 90vw;
+    height: 61px;
+    background-color: #97672cc3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+}
+.carousel-inner .carousel-image{
+    width: 50vw;
+    height: 20vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.review{
+    width: 90vw;
+    margin: 5vw;
+}
+.review b{
+    font-size: 45px;
+    color: #97662C;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.review .text-box{
+    width: 90vw;
+    /* height: 219px; */
+    background-color: #97672c3e;
+    border-radius: 10px;
+}
+.review .text-box .form-control{
+    background-color: #97672c00;
+}
+.review .text-box .btn-submit{
+    /* position: absolute; */
+    float: right;
+    padding: 0.5vw 3vw;
+    background-color: #97662C;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    margin-top: 1vw;
+    /* right: 5vw; */
+    /* bottom: 0; */
+    /* margin-bottom: 100vw; */
+}
+
+footer{
+    /* height: 15vw; */
+    padding: 2vw;
+    /* width: 100vw; */
+    margin: 0;
+    background-color: #4f3618;
+    color: white;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer ul li{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li .icon{
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #97672c; */
+}
+footer ul li p{
+    font-size: 20px;
+}
+.container-menu .circle-image{
+    width: 15vw;
+    height: 15vw;
+    background-color: #97662C;
+    border-radius: 7.5vw;
+    background-position: center;
+    background-size: cover;
+}
+.container-menu .circle-stroke{
+    width: 17vw;
+    height: 17vw;
+    background-color: #d18e3c;
+    border-radius: 8.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-katalog{
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    background-color: #97672c99;
+    width: 40%;
+    padding: 0.3vw 2vw;
+    border-radius: 30px;
+}
+.container-cookies .image{
+    width: 20vw;
+    height: 20vw;
+    background-color: #97662C;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-cookies .form-container{
+    width: 762px;
+    height: 310px;
+    background-color: #97672c7f;
+    border-radius: 10px;
+}
+
+.container-cookies .form-container label{
+    font-size: 35px;
+    font-weight: 300;
+    color: white;
+}
+
+.container-cookies .btn-cookies{
+    width: 196px;
+    height: 50px;
+    background-color: #86715ac7;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    padding: 0.2vw;
+    color: white;
+}
+.container-cookies .btn-cookies:hover{
+    background-color: #86715a;
+}
+.container-cookies .btn-submit{
+    padding: 0.3vw 3vw;
+    background-color: #97662C;
+    color: white;
+    font-weight: 500;
+}
+
+.container-keranjang .nav-keranjang{
+    width: 90vw;
+    height: 61px;
+    background-color: #97672cc3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+}
+.container-keranjang .close{
+    text-decoration: none;
+    color: white;
+}
+.container-keranjang .container-image .image{
+    width: 12vw;
+    height: 12vw;
+    background-color: #97662C;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+.container-keranjang .container-desk p{
+    margin: 0;
+}
+.container-keranjang .container-desk .title{
+    font-weight: 500;
+}
+.container-keranjang .container-desk .desk{
+    color: rgba(0, 0, 0, 0.5);
+}
+.container-keranjang .container-input{
+    display: flex;
+    align-items: center;
+}
+.container-keranjang .container-input .form-control{
+    background-color: #d18e3c;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+.container-keranjang .subtotal{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1vw;
+    margin: 1vw;
+    margin-top: 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+.container-keranjang .subtotal p{
+    margin: 0;
+}
+.container-keranjang .subtotal .title{
+    font-size: 24px;
+    font-weight: 500;
+}
+.container-keranjang .subtotal .desk{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+}
+.container-keranjang form .btn-submit{
+    background-color: #97672c9a;
+    font-size: 24;
+    font-weight: 500;
+    color: white;
+    padding: 0.4vw 10vw;
+    text-align: center;
+}
+
