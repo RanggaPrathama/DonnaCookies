@@ -46,6 +46,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/konfirmasi', [PembayaranController::class, 'konfirmasi'])->name('pembayaran.konfirmasi');
 
+    Route::post('/reviiew/{id}',[HomeController::class,'review'])->name('reviewcreate');
+
     //Route::get('/register')
 
 
@@ -65,6 +67,8 @@ Route::middleware('auth')->group(function () {
 
     /*===================== Detail COOKIES =====================*/
     Route::post('/detail/cookies/create', [DetailCookiesController::class, 'store'])->name('detail.store');
+
+
 
     /*===================== Berat =====================*/
     Route::get('/berat', [BeratController::class, 'index'])->name('berat.index');

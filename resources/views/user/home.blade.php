@@ -3,6 +3,13 @@
 @section('content')
 
 <header>
+    @if (session('success'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ session('success') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+@endif
+
     <div class="row1">
         <div class="text-box">
             <p>Donna cookies mempunyai kue kering yang rasanya enak dan tekstur nya yang renyah
@@ -71,9 +78,34 @@
 </section>
 <section class="review">
     <b>Reviews</b>
+
     <div class="text-box">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Tinggalkan pesan disini!"></textarea>
+        <form method="POST" action="{{route('reviewcreate',auth()->user()->id_user)}}">
+            @csrf
+        <textarea class="form-control" name="review" id="exampleFormControlTextarea1" rows="6" placeholder="Tinggalkan pesan disini!"></textarea>
         <button type="submit" class="btn btn-submit">Kirim</button>
+    </form>
       </div>
+</section>
+
+<section class="review" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 py-3">
+                <b>Reviews User</b>
+            </div>
+            <div class="row">
+
+
+            @foreach ($reviews as $review)
+            <div class="col-lg-4 my-3 d-flex mx-3" style="background-color:rgb(160, 125, 78); border-radius:20px">
+                    <img src="{{asset('images/icon-user-15.jpg')}}" class="img-fluid py-3" style=" height:100px" alt="">
+                    <p class="px-3 my-auto text-white">{{$review->review}}</p>
+
+            </div>
+            @endforeach
+        </div>
+        </div>
+    </div>
 </section>
 @endsection
